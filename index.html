@@ -1,1 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="bg"></div>
+
+  <header class="nav">
+    <div class="brand">YOURNAME</div>
+    <nav class="links">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#game">Neon Reaction</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero reveal">
+      <div class="heroText">
+        <p class="tag">Building + learning every day</p>
+        <h1>Hi, I’m <span class="neon">Dutchen Charles</span>.</h1>
+        <p class="sub">
+          I build clean web experiences and I’m leveling up fast through Pursuit + WGU.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="#projects">See Projects</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="heroPhotos">
+        <img class="photo" src="assets/me-1.jpg" alt="Photo of me 1" />
+        <img class="photo" src="assets/me-2.jpg" alt="Photo of me 2" />
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <h2>Projects</h2>
+
+      <div class="grid">
+        <article class="card">
+          <div class="cardTop">
+            <h3>BoxHand</h3>
+            <span class="pill">MVP in progress</span>
+          </div>
+          <p>
+            A pooled-savings app (digital “sousou”) with group trust, scheduled contributions,
+            and emergency withdrawals that require approval thresholds.
+          </p>
+          <ul class="mini">
+            <li>Pairs + friend groups</li>
+            <li>Approval-based withdrawals</li>
+            <li>Audit history + anti-fraud mindset</li>
+          </ul>
+
+          <div class="cardBtns">
+            <a class="btn small" href="#" aria-disabled="true">Demo (soon)</a>
+            <a class="btn small" href="#" aria-disabled="true">Repo (soon)</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="cardTop">
+            <h3>Neon Reaction Game</h3>
+            <span class="pill">JavaScript</span>
+          </div>
+          <p>
+            A fast mini-game: wait for the box to turn neon, then click as fast as possible.
+          </p>
+          <div class="cardBtns">
+            <a class="btn small" href="#game">Play</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Git/GitHub</span>
+        <span class="chip">Debugging (DevTools)</span>
+      </div>
+    </section>
+
+    <section id="game" class="section reveal">
+      <h2>Neon Reaction</h2>
+      <p class="muted">Rule: click only when it turns neon. False start = penalty.</p>
+
+      <div class="game">
+        <button id="startBtn" class="btn primary">Start</button>
+        <div id="box" class="box">WAIT…</div>
+        <div class="scoreRow">
+          <div>Time: <span id="time">—</span></div>
+          <div>Best: <span id="best">—</span></div>
+          <div>Status: <span id="status">Ready</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <h2>Contact</h2>
+      <div class="contactRow">
+        <a class="btn" href="https://github.com/YOURGITHUB" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/YOURLINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn" href="mailto:YOUREMAIL@example.com">Email</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> YOUR NAME</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
 
